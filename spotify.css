@@ -1,0 +1,190 @@
+* {                     
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    gap: 10px;
+    display: grid;
+    height: 100vh;
+    padding: 8px;
+    background-color: black;
+    grid-template-columns: 2.3fr 7.7fr;
+    grid-template-rows: 9fr 1fr;
+    grid-template-areas: 
+    "aside container"
+    "footer footer"
+}    
+
+aside{
+    grid-area: aside;
+    margin-left: 2px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1.7fr 8.7fr;
+    grid-template-areas: 
+    "option"
+    "box"; 
+}
+
+.option{
+    display: flex;
+    background-color: rgb(18,18,18);
+    border-radius: 10px;
+    
+}
+
+.option-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.option-item{
+    font-size: 16px;
+}
+
+.option-link{
+    color: #B3B3B3;
+    font-weight: bold;
+}
+
+.option-link > i{
+    margin: 12px 18px ;
+    font-size: 22px;
+}
+
+.box{
+    background-color: rgb(18,18,18);
+    border-radius: 10px;
+}
+
+.biblioteca{
+    display: flex;
+    justify-content: space-between;
+    color: #B3B3B3;
+    margin: 15px 20px 25px 25px;
+}
+
+.biblioteca-link{
+    display: flex;
+    align-items: center;
+    color: #B3B3B3;
+    font-weight: bold;
+    font-size: 16px; 
+}
+
+.plus{
+    font-size: 18px;
+    color: #B3B3B3;
+}
+
+.biblioteca-link > i{
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    flex-direction: column;
+    padding:  0px 8px 8px 8px;
+}
+
+.card{
+    background-color: #242424;
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.credito{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 170px;
+}
+
+.cookies{
+    margin: 45px 0px;
+    padding-left: 24px; 
+    font-size: 11px;
+    color: #B3B3B3;  
+}
+
+.linguagem{
+    margin: 0px 0px 18px 32px;
+    border: 2px solid  #FFFFFF;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.linguagem > i{
+    padding-right: 5px;
+}
+
+.container{
+    grid-area: container;
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 
+    "header"
+    "main"; 
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(15,15,15);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+}
+
+.bars{
+    border-radius: 50%;
+    background-color: black;
+}
+.nav-menu {
+
+    display: flex;
+    gap: 10px; /*vai no elemento pai, ele da um espaçamento */
+
+}
+.bars {
+
+    display: flex;
+    color: #A7A7A7;
+    font-size: 22px;
+    gap: 10px;
+    padding-left: 20px;
+
+}
+
+main{
+    background-color: rgb(18,18,18);
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer{
+    grid-area: footer;
+    background-color: green;
+}
